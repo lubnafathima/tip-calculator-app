@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    /* ### Primary */
+    --Strong-cyan: hsl(172, 67%, 45%);
+    /* ### Neutral */
+    --Very-dark-cyan: hsl(183, 100%, 15%);
+    --Dark-grayish-cyan: hsl(186, 14%, 43%);
+    --Dark-grayish-cyan-2: hsl(184, 14%, 56%);
+    --Light-grayish-cyan: hsl(185, 41%, 84%);
+    --Light-grayish-cyan-2: hsl(189, 41%, 97%);
+    --White: hsl(0, 0%, 100%);
+}
+.main {
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Space Mono', monospace;
+    background-color: var(--Light-grayish-cyan);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo-img {
+    position: relative;
+    top: -6%;
+    width: 5vw;
+}
+.container {
+    background-color: var(--White);
+    width: 60%;
+    height: auto;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    padding: 2em;
+    color: var(--Dark-grayish-cyan);
+}
+.left-container {
+    margin-right: 2em;
+    width: 50%;
+}
+.left-top, .left-middle {
+    margin-bottom: 2em;
+    width: 100%;
+}
+.label-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.lt-h1, .lm-h1, .lb-h1, .lb-h2 {
+    font-size: 1vw;
+    margin-bottom: 1em;
+}
+.lb-h2 {
+    color: hsl(0, 100%, 74%);
+}
+.lb-h2-none {
+    display: none;
+}
+.lb-h2-block {
+    display: block;
+}
+.label-bill, .label-people {
+    background-color: var(--Light-grayish-cyan-2);
+    border-radius: 2px;
+    width: 100%;
+    padding: .5em 1em;
+}
+.bill-dollar, .no-people {
+    width: .8vw;
+}
+.bill-value, .people-value {
+    border: none;
+    outline: none;
+    width: 90%;
+    background: none;
+    text-align: right;
+    float: right;
+    color: var(--Dark-grayish-cyan);
+    font-weight: 600;
+    font-size: 1.3vw;
+}
+.tips-select {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 10px;
+    grid-auto-rows: minmax(10px, auto);
+}
+.tips {
+    background-color: var(--Very-dark-cyan);
+    padding: .5em 0;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    color: var(--White);
+    font-size: 1vw;
+    font-weight: 700;
+    letter-spacing: 2px;
+    transition: .2s ease;
+}
+.tips-btn:hover {
+    background-color: var(--Strong-cyan);
+    color: var(--Very-dark-cyan);
+}
+input[type="number"]::-webkit-outer-spin-button, 
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+input[type="number"] {
+    -moz-appearance: textfield;
+}
+.tips-input {
+    background-color: var(--Light-grayish-cyan-2);
+    color: var(--Very-dark-cyan);
+    border: none;
+    outline: none;
+}
+.tips-input:focus {
+    outline: 2px solid var(--Strong-cyan);
+}
+.right-container {
+    width: 50%;
+    height: 100%;
+    background-color: var(--Very-dark-cyan);
+    border-radius: 15px;
+    padding: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.right-top {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.tip-amount, .total {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.ta-h2, .to-h2, .ta-p, .to-p {
+    font-size: 1vw;
+    color: var(--White);
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.ta-p, .to-p {
+    font-size: .8vw;
+    color: var(--Dark-grayish-cyan-2);
+}
+.ta-output, .to-output {
+    font-size: 2vw;
+    font-weight: 600;
+    color: var(--Strong-cyan);
+}
+.reset-btn {
+    width: 100%;
+    border: none;
+    outline: none;
+    padding: .5em 0;
+    background-color: var(--Dark-grayish-cyan);
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: var(--Very-dark-cyan);
+    border-radius: 5px;
+}
+.reset-btn:hover {
+    background-color: var(--Strong-cyan);
+    transition: .2s;
+    cursor: pointer;
+}
+.active {
+    background-color: var(--Strong-cyan);
+    color: var(--Very-dark-cyan);
+}

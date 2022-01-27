@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tip Calculator App</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="images/logo.svg" type="image/x-icon">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <main class="main">
+    <img src="images/logo.svg" alt="logo" class="logo-img">
+    <div class="container">
+      <div class="left-container">
+        <div class="left-top">
+          <h1 class="lt-h1">Bill</h1>
+          <div class="label-bill">
+            <img src="images/icon-dollar.svg" class="bill-dollar" alt="icon-dollar">
+            <input type="number" value="0" class="bill-value" placeholder="0">
+          </div>
+        </div>
+        <div class="left-middle">
+          <h1 class="lm-h1">Select Tip %</h1>
+          <div class="tips-select">
+            <a href="#" class="tips tips-btn active">5%</a>
+            <a href="#" class="tips tips-btn">10%</a>
+            <a href="#" class="tips tips-btn">15%</a>
+            <a href="#" class="tips tips-btn">25%</a>
+            <a href="#" class="tips tips-btn">50%</a>
+            <input type="text" placeholder="Custom" class="tips tips-input">
+          </div>
+        </div>
+        <div class="left-bottom">
+          <div class="label-div">
+            <h1 class="lb-h1">Number of People</h1>
+            <h2 class="lb-h2 lb-h2-none">Enter Valid Number</h2>  
+          </div>
+          <div class="label-people">
+            <img src="images/icon-person.svg" class="no-people" alt="icon-dollar">
+            <input type="text" class="people-value" placeholder="0">
+          </div>
+        </div>
+      </div>
+      <div class="right-container">
+        <div class="right-top">
+          <div class="tip-amount">
+            <div class="ta-left">
+              <h2 class="ta-h2">Tip Amount</h2>
+              <p class="ta-p">/ person</p>
+            </div>
+            <div class="ta-right">
+              <p class="ta-output">$0.00</p>
+            </div>
+          </div>
+          <div class="total">
+            <div class="to-left">
+              <h2 class="to-h2">Total</h2>
+              <p class="to-p">/ person</p>
+            </div>
+            <div class="to-right">
+              <p class="to-output">$0.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="right-bottom">
+          <button class="reset-btn">Reset</button>
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
